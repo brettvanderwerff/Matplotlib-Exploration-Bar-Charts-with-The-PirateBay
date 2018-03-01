@@ -43,13 +43,10 @@ def get_x_y(dictionary, top_n):
      the top categories the user wants for downstream graphing (i.e. top_n = 5 will get the five most common categories
       from the categories_count dictionary).
       '''
-    top_n_keys = sorted(dictionary, key=lambda x: dictionary.get(x), reverse=True)[:top_n]
-    x = []
+    x = sorted(dictionary, key=lambda x: dictionary.get(x), reverse=True)[:top_n]
     y = []
-    for key, value in dictionary.items():
-        if key in top_n_keys:
-            x.append(key)
-            y.append(value)
+    for key in x:
+        y.append(dictionary[key])
     return x, y
 
 def bar_chart(x, y, title, xlabel, ylabel):
