@@ -66,7 +66,7 @@ if __name__ == '__main__':
     categories_list = get_categories(torrent_list=torrent_list)
     catergories_count = count_categories(categories_list)
     x, y = get_x_y(dictionary=catergories_count, top_n=10)
-    bar_chart(x=x, y=y, title='Top 5 Torrent Categories 2016', xlabel='Torrent Category', ylabel='# of Torrents')
+    bar_chart(x=x, y=y, title='Top 10 Torrent Categories 2016', xlabel='Torrent Category', ylabel='# of Torrents')
 
 
 
