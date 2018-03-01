@@ -57,7 +57,7 @@ def bar_chart(x, y, title, xlabel, ylabel):
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.xticks(rotation=45)
-    plt.bar(x, y)
+    plt.bar(x=x, height=y)
     plt.tight_layout()
     plt.show()
 
